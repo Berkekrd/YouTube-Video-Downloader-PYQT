@@ -29,7 +29,6 @@ class Window(Ui_MainWindow,QtWidgets.QMainWindow):
         msg = QMessageBox()
         msg.setWindowTitle("BERKE KARADUMAN")
         msg.setText(message)
-
         x = msg.exec_()
 class Worker(QObject):
     programming_signal = pyqtSignal(str)
